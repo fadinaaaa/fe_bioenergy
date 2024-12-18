@@ -1,0 +1,76 @@
+.sidebar {
+    width: 250px; /* Lebar standar untuk layar besar */
+    background-color: #311E69; /* Pastikan sidebar lebih gelap dari konten */
+    padding-top: 20px;
+    color: white;
+    height: 100vh; /* Sidebar memenuhi tinggi layar */
+    transition: all 0.3s ease; /* Animasi halus untuk transisi */
+}
+
+/* Gambar profil dalam sidebar */
+.sidebar .profile-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+/* Menu navigasi di sidebar */
+.menu {
+    list-style-type: none; /* Hapus bullet point */
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.menu a {
+    color: white; /* Warna default link di sidebar */
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+    transition: color 0.3s ease; /* Tambahkan transisi untuk efek hover */
+}
+
+.menu a:hover {
+    color: #FFD100; /* Warna hover untuk menu */
+    text-decoration: none; /* Tetap hilangkan garis bawah saat hover */
+}
+
+
+/* Tombol logout */
+.profile-footer {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Sidebar penuh lebar pada layar kecil */
+        height: auto; /* Tinggi menyesuaikan dengan konten */
+        position: relative; /* Atur posisi agar fleksibel */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Kurangi jarak antar item menu */
+    }
+}
+
+/* Media query untuk layar sangat kecil (ponsel) */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%; /* Lebar penuh untuk ponsel */
+        padding: 10px; /* Kurangi padding untuk ponsel */
+    }
+
+    .sidebar .profile-img {
+        width: 60px; /* Gambar profil lebih kecil */
+        height: 60px;
+    }
+
+    .menu li {
+        margin: 8px 0; /* Jarak antar item menu lebih kecil */
+    }
+}

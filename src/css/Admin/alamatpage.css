@@ -1,0 +1,95 @@
+/* Overall container */
+.dashboard-container {
+    display: flex;
+}
+
+/* Main content */
+.main-content.alamat-admin-main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Search container */
+.search-container.alamat-admin-search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #311E69;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #FFD100;
+}
+
+/* Table */
+.alamat-admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.alamat-admin-table th, .alamat-admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.alamat-admin-table th {
+    background-color: #311E69;
+    color: white;
+}
+
+/* Styling tombol edit dan delete agar sejajar */
+.alamataction-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+    .edit-button, .delete-button {
+        padding: 6px 12px;
+        margin: 0 5px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .edit-button:hover {
+        background-color: #2980b9;
+    }
+
+    .delete-button {
+        background-color: #e74c3c;
+    }
+
+    .delete-button:hover {
+        background-color: #c0392b;
+    }
+
+    .delete-button, .edit-button {
+        border-radius: 4px;
+    }

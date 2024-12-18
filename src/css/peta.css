@@ -1,0 +1,23 @@
+.map-container {
+    padding: 30px; /* Tambahkan padding untuk jarak di dalam container */
+    background-color: white; /* Warna latar belakang untuk container */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk memberikan efek kedalaman */
+}
+
+/* Media query untuk layar sedang (tablet) */
+@media (max-width: 768px) {
+    .map-container {
+        padding: 20px; /* Kurangi padding untuk layar yang lebih kecil */
+        border-top-left-radius: 30px; /* Kurangi radius sudut */
+        border-top-right-radius: 30px;
+    }
+}
+
+/* Media query untuk layar kecil (ponsel) */
+@media (max-width: 480px) {
+    .map-container {
+        padding: 15px; /* Kurangi padding lebih banyak untuk ponsel */
+        border-top-left-radius: 20px; /* Kurangi radius sudut lebih jauh */
+        border-top-right-radius: 20px;
+    }
+}

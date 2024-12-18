@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.main-signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.headers-signup {
+    display: flex;
+    padding: 50px 50px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.headers-signup img {
+    width: 60px;
+}
+
+.headers-signup h3 {
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.headers-signup .logo2 {
+    color: #E7C517;
+}
+
+.content-signup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-img1 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.box-form-signup {
+    margin-top: 15rem;
+    margin-top: 15rem;
+    background-color: #fff;
+    padding: 0px 40px;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #311E69;
+    /* Warna ungu untuk heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #311E69;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #311E69;
+}
+
+.upload-photo {
+    margin-top: 10px;
+    color: #555555;
+}
+
+.sign-up-btn {
+    width: 100%;
+    background-color: #311E69;
+    /* Tombol ungu */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.sign-up-btn:hover {
+    background-color: #FFD100;
+    /* Warna kuning saat hover */
+}
+
+.login-option {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.login-option a {
+    color: #311E69;
+    text-decoration: none;
+}
+
+.button-signup {
+    font-size: 12pt;
+    background-color: #4D3A95;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.button-signup:hover {
+    background-color: #7862c8;
+    color: #161223;
+}
+
+.login-option a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .signup-form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    select {
+        padding: 10px;
+    }
+
+    .sign-up-btn {
+        padding: 10px;
+    }
+}

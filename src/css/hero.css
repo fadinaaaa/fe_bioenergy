@@ -1,0 +1,119 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #311E69;
+    color: white;
+    padding: 3rem;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-title {
+    font-size: 3rem;
+    /* Ukuran font untuk judul */
+    font-weight: bold;
+    /* Menebalkan judul */
+    color: #FFD700;
+    /* Warna kuning untuk Sustainable Energy */
+    margin: 0;
+    /* Menghilangkan margin */
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    /* Ukuran font untuk subtitle */
+    color: #FFD700;
+    /* Warna kuning untuk Sustainable Future */
+    margin: 0;
+    /* Menghilangkan margin */
+    margin-top: 0.5rem;
+    /* Jarak atas untuk subtitle */
+
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    /* Ukuran font untuk deskripsi */
+    margin-top: 1rem;
+    /* Jarak atas deskripsi */
+    color: white;
+    /* Warna putih untuk deskripsi */
+    text-align: start;
+}
+
+.hero-image {
+    max-width: 100%;
+    /* Maksimum lebar untuk gambar */
+}
+
+.hero-image img {
+    width: 100%;
+    /* Mengatur lebar gambar sesuai kontainer */
+    height: auto;
+    /* Menjaga proporsi gambar */
+}
+
+/* Media Query untuk Layar Sedang (Tablet) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        /* Ubah tata letak ke kolom */
+        padding: 3rem;
+        /* Kurangi padding untuk layar sedang */
+    }
+
+    .hero-content {
+        max-width: 100%;
+        /* Lebar penuh untuk konten */
+        text-align: center;
+        /* Teks di tengah */
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        /* Kurangi ukuran font untuk layar sedang */
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+        /* Kurangi ukuran font untuk subtitle */
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        /* Kurangi ukuran font untuk deskripsi */
+    }
+}
+
+/* Media Query untuk Layar Kecil (Ponsel) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem;
+        /* Kurangi padding lebih jauh untuk ponsel */
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        /* Ukuran font lebih kecil untuk ponsel */
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        /* Ukuran font subtitle lebih kecil */
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        /* Ukuran font deskripsi lebih kecil */
+        text-align: center;
+        /* Teks di tengah untuk ponsel */
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        /* Kurangi lebar gambar untuk ponsel */
+    }
+}

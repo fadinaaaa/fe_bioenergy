@@ -1,0 +1,138 @@
+.header {
+    background-color: #311E69;
+    color: white;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+
+.logo-bio {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.logo-energy {
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+}
+
+/* Tombol Sign In */
+.sign-in-button {
+    background-color: #FFD700;
+    color: #432C85;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sign-in-button:hover {
+    background-color: #FFC300;
+    transform: scale(1.05); /* Sedikit efek zoom */
+}
+
+/* Media Query untuk Layar Sedang (Tablet) */
+@media (max-width: 768px) {
+    .nav-item {
+        margin-right: 1rem;
+    }
+
+    .logo-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sign-in-button {
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-open {
+        transform: translateX(0);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

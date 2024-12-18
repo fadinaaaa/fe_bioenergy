@@ -1,0 +1,195 @@
+/* Styling untuk form-container (modal) */
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Pastikan modal muncul di atas elemen lainnya */
+}
+
+/* Styling untuk form edit (modal form) */
+.form-edit-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    z-index: 10000; /* Memastikan modal berada di depan overlay */
+}
+
+/* Styling untuk form group (input fields) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #311E69;  /* Warna border saat fokus */
+}
+
+/* Styling untuk button save dan cancel */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Menjaga tombol sejajar */
+    margin-top: 20px;
+}
+
+.save-button, .cancel-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 48%;  /* Agar tombol tidak terlalu lebar dan saling berjajar */
+}
+
+.save-button {
+    background-color: #1e90ff;  /* Warna biru untuk save */
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336;  /* Warna merah untuk cancel */
+    color: white;
+}
+
+.save-button:hover, .cancel-button:hover {
+    opacity: 0.8;  /* Efek hover */
+}
+
+/* Responsif untuk layar kecil (misalnya mobile) */
+@media (max-width: 600px) {
+    .form-edit-container {
+        padding: 15px;
+        max-width: 100%; /* Form akan mengisi seluruh lebar layar */
+    }
+
+    .button-container {
+        flex-direction: column; /* Tombol ditumpuk secara vertikal */
+        align-items: center; /* Meratakan tombol ke tengah */
+    }
+
+    .save-button, .cancel-button {
+        width: 100%;  /* Tombol mengambil lebar penuh pada layar kecil */
+        margin-bottom: 10px; /* Memberikan jarak antar tombol */
+    }
+
+    .save-button:last-child, .cancel-button:last-child {
+        margin-bottom: 0; /* Menghapus margin bawah untuk tombol terakhir */
+    }
+}
+
+/* Styling untuk form yang lebih sederhana (tanpa modal) */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk label */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #311E69;
+}
+
+/* Styling untuk input text */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Pesan error */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Button Container (Save & Cancel buttons) */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Save */
+.save-button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #1e90ff;
+}
+
+/* Button Cancel */
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+/* Responsivitas untuk form */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    form input[type="text"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

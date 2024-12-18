@@ -1,0 +1,129 @@
+/* CSS umum */
+.register-container {
+    display: flex; /* Gunakan flexbox untuk layout */
+    align-items: center; /* Tengah vertikal */
+    justify-content: space-around; /* Tengah horizontal */
+    padding: 2rem; /* Tambahkan padding sesuai kebutuhan */
+}
+
+.image-container {
+    flex: 1; /* Memberikan ruang untuk gambar */
+}
+
+.image-container img {
+    max-width: 100%; /* Pastikan gambar responsif */
+    height: auto; /* Pastikan rasio gambar tetap */
+    border-radius: 15px; /* Opsional: menambahkan border-radius pada gambar */
+}
+
+.register-form {
+    flex: 1; /* Memberikan ruang untuk form */
+    margin-left: 20px; /* Tambahkan margin antara gambar dan form */
+    background-color: #ffffff; /* Latar belakang putih untuk form registrasi */
+    padding: 10px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-form {
+    margin: 4rem;
+    background-color: #ffffff; /* Latar belakang putih untuk form registrasi */
+    padding: 10px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.reg-title {
+    font-size: 1.8rem;
+    color: #311E69; /* Warna ungu untuk heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #555555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #311E69;
+}
+
+button {
+    width: 100%;
+    background-color: #311E69; /* Tombol ungu */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD100; /* Warna kuning saat hover */
+}
+
+.signin-option {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.signin-option a {
+    color: #311E69;
+    text-decoration: none;
+}
+
+.signin-option a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .register-form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

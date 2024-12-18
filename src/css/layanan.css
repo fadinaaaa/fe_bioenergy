@@ -1,0 +1,103 @@
+/* CSS untuk News Section */
+.layanan {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.layanan .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 auto;
+}
+
+.layanan h2 {
+    font-size: 2.5rem;
+    margin: 40px 20px;
+    color: #311E69;
+}
+
+.layanan-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.layanan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 60px);
+    text-align: center; /* Mengubah ke center untuk memusatkan teks */
+    margin-bottom: 1.5rem;
+}
+
+
+.layanan-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.layanan-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.layanan-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.layanan-card button {
+    background-color: #311E69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.layanan-card button:hover {
+    background-color: #FFD100; /* Warna kuning saat hover */
+}
+
+.profile-main-content {
+    margin-left: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Mengatur elemen agar sejajar secara horizontal */
+    justify-content: center;
+    /* Mengatur elemen agar sejajar secara vertikal dari atas */
+    padding: 100px;
+    background-color: #fff;
+}
+/* Media Query untuk Layar Sedang (Tablet) */
+@media (max-width: 768px) {
+    .layanan h2 {
+        font-size: 2rem; /* Kurangi ukuran font */
+    }
+
+    .layanan-card {
+        width: calc(50% - 40px); /* Dua kolom pada layar sedang */
+    }
+}
+
+/* Media Query untuk Layar Kecil (Ponsel) */
+@media (max-width: 480px) {
+    .layanan h2 {
+        font-size: 1.8rem; /* Kurangi ukuran font lebih jauh */
+    }
+
+    .layanan-card {
+        width: 100%; /* Satu kolom penuh pada layar kecil */
+        margin-bottom: 1rem;
+    }
+}

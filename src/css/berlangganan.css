@@ -1,0 +1,173 @@
+/* Styling untuk container utama */
+.laymain-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;  /* Menata konten secara vertikal */
+    justify-content: flex-start; /* Memastikan konten dimulai dari atas */
+    min-height: 100vh; /* Menjadikan elemen penuh hingga bawah halaman */
+    box-sizing: border-box; /* Memastikan padding termasuk dalam tinggi elemen */
+}
+
+/* Styling untuk Container Utama */
+.berlangganan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    min-height: 95vh;
+    flex-direction: column;
+}
+
+/* Judul Berlangganan */
+.berlangganan-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #311E69; /* Menggunakan warna yang konsisten dengan tema */
+    font-weight: bold;
+}
+
+/* Styling untuk Kotak Formulir */
+.berlangganan-box {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Menambahkan align ke kiri untuk seluruh konten */
+    border: 1px solid #ddd; /* Menambahkan border untuk kotak agar lebih jelas */
+}
+
+/* Styling Formulir */
+.berlangganan-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Tabel Formulir Memanjang */
+.berlangganan-form table {
+    width: 100%; /* Tabel memanjang penuh */
+    table-layout: auto; /* Mengatur ukuran kolom otomatis */
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+h2 {
+    font-size: 24px;
+    color: #311E69;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.berlangganan-form th,
+.berlangganan-form td {
+    padding: 12px 8px;
+    text-align: left; /* Mengatur agar teks di dalam kolom berada di kiri */
+    border: 1px solid #ccc;
+}
+
+/* Styling untuk Header Tabel */
+.berlangganan-form th {
+    background-color: #311E69; /* Sesuaikan warna dengan tema */
+    color: #fff;  /* Warna teks header putih agar kontras */
+}
+
+/* Menyusun kolom-kolom untuk kategori, tanggal, dan alamat */
+.berlangganan-form td {
+    vertical-align: middle; /* Menjaga teks tetap berada di tengah kolom */
+}
+
+/* Menambahkan styling untuk tombol submit */
+.submit-btn {
+    background-color: #311E69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #FFD100;
+}
+
+
+
+/* Tombol Berhenti Berlangganan */
+.cancel-btn {
+    padding: 12px 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* CSS untuk active link */
+.active-link {
+    color: #FFD100;
+    font-weight: bold;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .berlangganan-box {
+        padding: 30px;
+    }
+
+    .berlangganan-title {
+        font-size: 24px;
+    }
+
+    .category-select,
+    .date-input,
+    .image-input {
+        font-size: 14px;
+    }
+
+    .berlangganan-form table {
+        font-size: 14px;
+    }
+
+    .berlangganan-form td,
+    .berlangganan-form th {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .berlangganan-box {
+        padding: 20px;
+    }
+
+    .berlangganan-title {
+        font-size: 20px;
+    }
+
+    .category-select,
+    .date-input,
+    .image-input {
+        font-size: 12px;
+    }
+
+    .submit-btn,
+    .cancel-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

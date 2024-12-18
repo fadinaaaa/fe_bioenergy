@@ -1,0 +1,174 @@
+/* Main Content Styling for Pengaduan */
+/* Full height for pengaduanmain-content */
+.pengaduanmain-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;  /* Menata konten secara vertikal */
+    justify-content: flex-start; /* Memastikan konten dimulai dari atas */
+    min-height: 100vh; /* Menjadikan elemen penuh hingga bawah halaman */
+    box-sizing: border-box; /* Memastikan padding termasuk dalam tinggi elemen */
+}
+
+/* Styling untuk judul pengaduan agar sejajar dengan profile dan username */
+h2 {
+    font-size: 24px;
+    color: #311E69;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+/* Container untuk profile dan username */
+.profile-container {
+    display: flex;
+    align-items: center;  /* Menyusun profil dan username dalam satu baris */
+    margin-bottom: 20px;
+}
+
+/* Styling untuk profile gambar */
+.profile-container .avatar-icon {
+    margin-right: 10px; /* Jarak antara gambar profil dan username */
+}
+
+.row-action{
+    display: flex;
+}
+
+.container-new-button-pengaduan {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/* Tombol Tambah Pengaduan yang lebih pendek dan rata kiri */
+button.tambah-pengaduan-btn {
+    width: 200px;
+    background-color: #311E69;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+button.tambah-pengaduan-btn:hover {
+    background-color: #5c3c9b; /* Hover effect warna lebih terang */
+}
+
+/* Tabel Pengaduan Memanjang dan Lebar */
+.pengaduan-section table {
+    width: 100%; /* Tabel mengambil seluruh lebar area yang tersedia */
+    table-layout: fixed; /* Membuat kolom tabel lebih fleksibel */
+    margin: 0; /* Menghilangkan margin default */
+    border-collapse: collapse;
+    border-radius: 8px;
+    background-color: #fff; /* Background putih untuk tabel */
+    font-size: 14px; /* Ukuran font untuk tabel */
+    margin-top: 20px;
+}
+
+/* Pengaturan lebar kolom tabel agar lebih memanjang ke kiri */
+.pengaduan-section table th, .pengaduan-section table td {
+    padding: 12px 8px; /* Penambahan padding agar teks tidak terlalu rapat */
+    text-align: left; /* Agar teks rata kiri */
+}
+
+/* Menambahkan border di setiap kolom untuk memisahkan isi tabel */
+.pengaduan-section table th, .pengaduan-section table td {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styling for Table Head */
+.pengaduan-section th {
+    background-color: #311E69; /* Warna background header tabel sesuai dengan sidebar */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Styling for Table Rows */
+.pengaduan-section td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd; /* Garis pembatas antar baris */
+    background-color: #f9f9f9; /* Warna latar belakang baris data */
+}
+
+.pengaduan-section tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Zebra striping (setiap baris genap dengan warna lebih terang) */
+}
+
+/* Hover effect untuk baris tabel */
+.pengaduan-section tr:hover {
+    background-color: #f1f1f1;
+}
+
+.pengaduan-section td img {
+    border-radius: 5px;
+    width: 50px; /* Ukuran gambar untuk foto pengaduan */
+    height: 50px;
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+}
+
+/* Styling untuk status pengaduan */
+.pengaduan-section .status {
+    font-weight: bold;
+    color: #e74c3c; /* Default status color (merah) untuk yang belum selesai */
+}
+
+.pengaduan-section .status.selesai {
+    color: #2ecc71; /* Hijau untuk status yang sudah selesai */
+}
+
+/* Styling untuk gambar foto selesai */
+.pengaduan-section td img.foto-selesai {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.pengaduan-section td span {
+    color: #95a5a6;
+}
+
+/* Responsive Styles for Pengaduan Tabel */
+@media (max-width: 768px) {
+    .pengaduan-section table {
+        font-size: 12px;
+    }
+
+    .pengaduan-section td, .pengaduan-section th {
+        padding: 10px 12px;
+    }
+
+    .pengaduan-section td img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pengaduan-section td span,
+    .pengaduan-section td img {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pengaduan-section table {
+        font-size: 10px; /* Ukuran font lebih kecil pada ponsel */
+    }
+
+    .pengaduan-section td, .pengaduan-section th {
+        padding: 8px 10px;
+    }
+
+    button.tambah-pengaduan-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

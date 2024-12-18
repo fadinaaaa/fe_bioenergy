@@ -1,0 +1,75 @@
+
+.sidebars {
+    width: 250px;
+    background-color: #311E69;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menjaga semua elemen di tengah secara horizontal */
+    height: 100vh; /* Menjaga sidebar penuh vertikal */
+}
+
+/* Info Admin */
+.sidebars-admin-info {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memastikan avatar dan teks berada di tengah */
+}
+
+.sidebars-avatar-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebars-admin-info p {
+    color: #fff;
+    margin: 0;
+}
+
+.sidebars-admin-role {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Menu Navigasi */
+.sidebars-nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebars-nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebars-nav-menu ul li {
+    margin: 10px 0; /* Mengurangi jarak antara item menu */
+    display: flex;
+    justify-content: center; /* Menjaga menu berada di tengah */
+    width: 100%;
+}
+
+.sidebars-nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px; /* Menambah padding kiri dan kanan untuk menghindari tampilan terlalu sempit */
+    border-radius: 5px;
+    width: 100%;
+    text-align: center; /* Menjaga teks berada di tengah */
+    transition: background-color 0.3s ease; /* Menambah animasi untuk perubahan warna */
+}
+
+/* Menambahkan efek hover pada menu */
+
+
+/* Menyesuaikan jarak bawah */
+.sidebars-nav-menu ul li:last-child {
+    margin-bottom: 0;
+}

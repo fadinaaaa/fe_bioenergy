@@ -1,0 +1,232 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    }
+
+    .signing-body {
+    background-color: #311E69;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    }
+
+    .main-signin {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .headers-signin {
+    display: flex;
+    padding: 50px 50px;
+    align-items: center;
+    font-weight: bold;
+    }
+
+    .headers-signin img {
+    width: 60px;
+    }
+
+    .headers-signin h3 {
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+    }
+    
+    .headers-signin .logo2 {
+    color: #E7C517;
+    }
+    .content-signin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    }
+    .box-img1 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    }
+    .box-form {
+    background-color: #fff;
+    padding: 0px 40px;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    border-radius: 50px;
+    }
+    .headers-box-form {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    }
+    .headers-box-form-regis {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    }
+    .welcome {
+    padding: 10px 0px;
+    font-size: 20pt;
+    color: #311E69;
+    font-weight: bolder;
+    }
+    .desc {
+    font-size: 12pt;
+    color: #311E69;
+    font-weight: lighter;
+    }
+
+    .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .group-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    }
+
+    .label-email-signin {
+    font-size: 10pt;
+    padding: 10px 0px;
+    color: #4D3A95;
+    font-weight: bolder;
+    }
+
+    .input-email-signin {
+    font-size: 8pt;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    width: 100%;
+    appearance: none;
+    padding: 15px 2px;
+    border-bottom: #311E69 solid 2px;
+    }
+
+    .label-email-regis {
+    font-size: 10pt;
+    padding: 1px 0px;
+    color: #4D3A95;
+    font-weight: bolder;
+    }
+
+    .input-email-regis, select {
+    font-size: 8pt;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    width: 100%;
+    appearance: none;
+    padding: 8px 2px;
+    border-bottom: #311E69 solid 2px;
+    }
+
+    .group-form-footer {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+    .group-form-footer-regis {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .group-form-footer b, .group-form-footer-regis b {
+    padding: 10px 0px;
+    font-size: 10pt;
+    font-weight: lighter;
+    }
+
+    .group-form-footer .span {
+    font-weight: bold;
+    text-decoration: none;
+    }
+    .group-form-footer .span:hover {
+    font-weight: bold;
+    color: #7862c8;
+    }
+    .group-form-footer-regis .span {
+    font-weight: bold;
+    text-decoration: none;
+    }
+    .group-form-footer-regis .span:hover {
+    font-weight: bold;
+    color: #7862c8;
+    }
+
+    .button-signin {
+    font-size: 12pt;
+    background-color: #4D3A95;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    }
+
+    .button-signin:hover {
+    background-color: #7862c8;
+    color: #161223;
+    }
+
+    @media screen and (max-width: 920px) {
+    .content-signin {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .box-form {
+        width: 50%;
+        margin: 0px 0px 30px 0px;
+    }
+    }
+    @media screen and (max-width: 600px) {
+    .box-img1 {
+        display: none;
+    }
+    .box-img2 {
+        width: 100%;
+    }
+    .box-form {
+        background-color: #fff;
+        padding: 0px 40px;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        border-radius: 50px;
+    }
+    }
+
+    @media (max-width: 400px) {
+    .sidebar {
+        display: none;
+    }
+    .topnav a, .nav_responsive {
+        display: flex;
+    }
+    .topnav.responsive, .icon {
+        display: block;
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    }

@@ -1,0 +1,130 @@
+.pengaduan-admin-main {
+    padding: 20px;
+}
+
+.pengaduan-admin-search input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.pengaduan-admin-search button {
+    padding: 5px 10px;
+}
+
+.pengaduan-admin-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.pengaduan-admin-table th,
+.pengaduan-admin-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.pengaduan-admin-table img {
+    width: 50px;
+    height: 50px;
+}
+
+.pengaduan-admin-table button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pengaduan-admin-table th {
+    background-color: #311E69;
+    color: white;
+}
+
+.action-button {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.edit-button, .delete-button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button:hover {
+    background-color: #2980b9;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.delete-button, .edit-button {
+    border-radius: 4px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .pengaduan-admin-search input,
+    .pengaduan-admin-search button {
+        width: 100%; /* Elemen pencarian penuh lebar */
+        margin-right: 0;
+    }
+
+    .pengaduan-admin-table th,
+    .pengaduan-admin-table td {
+        font-size: 12px; /* Kurangi ukuran font untuk layar kecil */
+        padding: 8px;
+    }
+
+    .pengaduan-admin-table img {
+        width: 40px;
+        height: 40px; /* Ukuran gambar lebih kecil di layar kecil */
+    }
+
+    .edit-button, .delete-button {
+        font-size: 12px; /* Ukuran font tombol lebih kecil */
+        padding: 5px 8px;
+    }
+
+    .action-buttons {
+        flex-direction: column; /* Tombol ditumpuk secara vertikal */
+    }
+}
+
+@media (max-width: 480px) {
+    .pengaduan-admin-main {
+        padding: 10px;
+    }
+
+    .pengaduan-admin-search input,
+    .pengaduan-admin-search button {
+        font-size: 12px; /* Ukuran font lebih kecil di layar kecil */
+    }
+
+    .pengaduan-admin-table {
+        font-size: 12px; /* Ukuran font lebih kecil untuk tabel */
+    }
+
+    .pengaduan-admin-table img {
+        width: 30px;
+        height: 30px; /* Ukuran gambar lebih kecil untuk layar sangat kecil */
+    }
+
+    .edit-button, .delete-button {
+        font-size: 10px; /* Ukuran font tombol lebih kecil */
+        padding: 4px 6px;
+    }
+}

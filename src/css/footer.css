@@ -1,0 +1,79 @@
+/* CSS untuk Footer */
+footer {
+    background-color: #311E69; /* Warna ungu baru */
+    padding: 40px 0;
+    color: white;
+}
+
+footer h1 {
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex; /* Menggunakan flexbox untuk menyusun logo */
+    align-items: center; /* Menjajarkan logo dan teks secara vertikal */
+}
+
+.logo-image {
+    width: 65px; /* Atur ukuran gambar logo sesuai kebutuhan */
+    height: 65px; /* Pastikan rasio tetap terjaga */
+    margin-right: 1px; /* Jarak antara logo dan teks */
+}
+
+footer h4 {
+    color: #FFD100; /* Warna kuning untuk judul bagian */
+    margin-bottom: 10px; /* Margin sedikit lebih kecil */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Menghilangkan margin */
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Jarak antar item */
+}
+
+footer ul li a {
+    color: white; /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+footer ul li a:hover {
+    color: #FFD100; /* Mengubah warna menjadi kuning saat di-hover */
+}
+
+footer div {
+    display: flex; /* Flexbox untuk layout */
+    /* justify-content: space-between; Memisahkan item dengan spasi */
+    max-width: 1200px; /* Lebar maksimum footer */
+    margin: 0 auto; /* Centering */
+}
+
+footer div > div {
+    width: 30%; /* Membagi footer dalam 3 kolom */
+    flex-direction: column;
+}
+
+/* Memastikan jarak antar bagian */
+footer div > div + div {
+    margin-left: 20px; /* Menambahkan margin antar kolom */
+}
+
+@media (max-width: 768px) {
+    footer div {
+        flex-direction: column; /* Mengubah layout menjadi kolom pada layar kecil */
+        text-align: center; /* Menjajarkan semua teks ke tengah */
+    }
+
+    footer div > div {
+        width: 100%; /* Mengatur lebar kolom menjadi 100% */
+        margin-bottom: 20px; /* Jarak antar kolom */
+    }
+
+    footer div > div + div {
+        margin-left: 0; /* Menghapus margin pada layar kecil */
+    }
+}

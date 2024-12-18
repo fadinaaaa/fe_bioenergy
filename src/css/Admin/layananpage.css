@@ -1,0 +1,74 @@
+.layanan-admin-main {
+    padding: 20px;
+}
+
+.layanan-admin-search input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.layanan-admin-search button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.layanan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.layanan-table th, .layanan-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.layanan-table th {
+    background-color: #311E69;
+    color:#ddd;
+}
+
+.layanan-table td button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+    .edit-button, .delete-button {
+        padding: 6px 12px;
+        margin: 0 5px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .edit-button:hover {
+        background-color: #2980b9;
+    }
+
+    .delete-button {
+        background-color: #e74c3c;
+    }
+
+    .delete-button:hover {
+        background-color: #c0392b;
+    }
+
+    .delete-button, .edit-button {
+        border-radius: 4px;
+    }

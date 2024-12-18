@@ -1,0 +1,7 @@
+.judul-map {
+    text-align: center; /* Mengatur agar teks berada di tengah */
+    margin-bottom: 20px; /* Jarak antara judul dan peta */
+    color: #311E69; /* Warna teks sesuai tema */
+    font-size: 2rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menebalkan teks judul */
+}

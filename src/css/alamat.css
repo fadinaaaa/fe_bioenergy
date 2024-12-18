@@ -1,0 +1,112 @@
+/* Styling untuk container utama */
+.alamatmain-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;  /* Menata konten secara vertikal */
+    justify-content: flex-start; /* Memastikan konten dimulai dari atas */
+    min-height: 100vh; /* Menjadikan elemen penuh hingga bawah halaman */
+    box-sizing: border-box; /* Memastikan padding termasuk dalam tinggi elemen */
+}
+
+/* Styling untuk judul halaman */
+.alamat-h2 {
+    color: #e42619;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk section */
+.alamat-section {
+    margin-bottom: 20px;
+    width: 100%; /* Pastikan section lebar penuh */
+}
+
+/* Styling untuk tabel */
+.alamat-table {
+    width: 100%; /* Tabel memanjang ke kiri */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.alamat-th,
+.alamat-td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.alamat-th {
+    background-color: #311E69;
+    color: white;
+    font-weight: bold;  /* Menebalkan teks kolom */
+    text-align: center;  /* Menempatkan teks di tengah */
+}
+
+/* Styling tombol edit dan delete agar sejajar */
+.alamat-action-buttons {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.alamat-edit-button,
+.alamat-delete-button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.alamat-edit-button {
+    background-color: #1e90ff;
+}
+
+.alamat-delete-button {
+    background-color: #f44336;
+}
+
+.alamat-edit-button:hover,
+.alamat-delete-button:hover {
+    opacity: 0.8;
+}
+
+.row-action{
+    display: flex;
+}
+
+/* Tombol Tambah Alamat */
+.container-new-button-alamat {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.new-button-alamat {
+    width: 150px;
+    background-color: #311E69;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .alamat-table {
+        font-size: 14px;
+    }
+}

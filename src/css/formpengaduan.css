@@ -1,0 +1,101 @@
+/* Styling untuk form-container (modal) */
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Pastikan modal muncul di atas elemen lainnya */
+}
+
+/* Styling untuk form edit (modal form) */
+.form-edit-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    z-index: 10000; /* Memastikan modal berada di depan overlay */
+}
+
+/* Styling untuk form group (input fields) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #311E69;  /* Warna border saat fokus */
+}
+
+/* Styling untuk button save dan cancel */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Menjaga tombol sejajar */
+    margin-top: 20px;
+}
+
+.save-button, .cancel-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 48%;  /* Agar tombol tidak terlalu lebar dan saling berjajar */
+}
+
+.save-button {
+    background-color: #1e90ff;  /* Warna biru untuk save */
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336;  /* Warna merah untuk cancel */
+    color: white;
+}
+
+.save-button:hover, .cancel-button:hover {
+    opacity: 0.8;  /* Efek hover */
+}
+
+/* Responsif untuk layar kecil (misalnya mobile) */
+@media (max-width: 600px) {
+    .form-edit-container {
+        padding: 15px;
+        max-width: 100%; /* Form akan mengisi seluruh lebar layar */
+    }
+
+    .button-container {
+        flex-direction: column; /* Tombol ditumpuk secara vertikal */
+        align-items: center; /* Meratakan tombol ke tengah */
+    }
+
+    .kirim-button, .cancel-button {
+        width: 100%;  /* Tombol mengambil lebar penuh pada layar kecil */
+        margin-bottom: 10px; /* Memberikan jarak antar tombol */
+    }
+
+    .kirim-button:last-child, .cancel-button:last-child {
+        margin-bottom: 0; /* Menghapus margin bawah untuk tombol terakhir */
+    }
+}
